@@ -1,11 +1,7 @@
-# The 2017 React Development Starter Guide
+# Sample TODO App made with React
 ## Sample Application
 
-This is the sample app of the tutorial __The 2017 React Development Starter Guide__ available on [CodingTheSmartWay.com](http://codingthesmartway.com/).
-
-## Online Course
-Check out the online course: [The Complete React Web App Developer Course](http://codingthesmartway.com/courses/react-complete/)
-
+This is the sample TODO app  
 ## Additional Information
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

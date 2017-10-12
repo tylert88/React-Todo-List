@@ -47,21 +47,13 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="alert alert-warning alert-dismissible" role="alert">
-          <button type="button" className="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <strong><a href="http://codingthesmartway.com/courses/react-complete/" target="_blank">[ONLINE COURSE] - The Complete React Web App Developer Course</a></strong> +++ You'll learn how to develop, test, and deploy React web applications +++ Understand the rich ecosystem of 3rd-party libraries like Redux and Webpack +++ Learn how to setup and automate testing using Karma and Mocha +++ Learn to style applications using the Foundation framework +++
-        </div>
-        <div className="page-header">
-          <h1>React Sample Application <small>by <a href="http://codingthesmartway.com" target="_blank">CodingTheSmartWay.com</a></small></h1>
-        </div>
-        <TodoInput
-          onAddTodo={this.handleAddTodo}
-          />
+      <div className="container ">
+        <TodoInput onAddTodo={this.handleAddTodo} />
         <hr />
         <h4>
           Todo Count: <span className="badge">{this.state.todos.length}</span>
         </h4>
+        
         <ul className="list-group">
           { this.state.todos.map((todo, index) =>
               <li className="list-group-item" key={index}>
@@ -72,9 +64,11 @@ class App extends Component {
               </li>
           )}
         </ul>
+
         <hr />
+
         <div className="footer">
-          <p>&copy; <a href="http://codingthesmartway.com" target="_blank">CodingTheSmartWay.com</a> | <a href="http://codingthesmartway.com/imprint" target="_blank">Imprint</a></p>
+          <p>&copy;Sample TODO List</p>
         </div>
       </div>
     );
@@ -124,7 +118,7 @@ class TodoInput extends Component {
           <form className="form-horizontal" onSubmit={this.handleSubmit}>
             <div className="form-group">
               <label htmlFor="inputTodoTitle" className="col-sm-2 control-label">Todo</label>
-              <div className="col-sm-10">
+              <div className="col-sm-5">
                 <input  name="todoTitle"
                         type="text"
                         className="form-control"
@@ -136,7 +130,7 @@ class TodoInput extends Component {
             </div>
             <div className="form-group">
               <label htmlFor="inputTodoResponsible" className="col-sm-2 control-label">Responsible</label>
-              <div className="col-sm-10">
+              <div className="col-sm-5">
                 <input  name="todoResponsible"
                         type="text"
                         className="form-control"
@@ -148,7 +142,7 @@ class TodoInput extends Component {
             </div>
             <div className="form-group">
               <label htmlFor="inputTodoDesc" className="col-sm-2 control-label">Description</label>
-              <div className="col-sm-10">
+              <div className="col-sm-5">
                 <textarea   name="todoDescription"
                             className="form-control"
                             rows="3"
@@ -159,7 +153,7 @@ class TodoInput extends Component {
             </div>
             <div className="form-group">
               <label htmlFor="inputTodoPriority" className="col-sm-2 control-label">Priority</label>
-              <div className="col-sm-10">
+              <div className="col-sm-5">
                 <select   name="todoPriority"
                           className="form-control"
                           id="inputTodoPriority"

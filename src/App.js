@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
 
-var todos = [
+const todos = [
   {
     todoTitle: 'My first todo',
-    todoResponsible: 'Sebastian',
+    todoResponsible: 'Tyler',
     todoDescription: 'Todo description',
     todoPriority: 'low'
   },
   {
     todoTitle: 'My second todo',
-    todoResponsible: 'Sebastian',
+    todoResponsible: 'Tyler',
     todoDescription: 'Todo description',
     todoPriority: 'medium'
   },
   {
     todoTitle: 'My third todo',
-    todoResponsible: 'Sebastian',
+    todoResponsible: 'Tyler',
     todoDescription: 'Todo description',
     todoPriority: 'high'
   }
@@ -53,7 +53,7 @@ class App extends Component {
         <h4>
           Todo Count: <span className="badge">{this.state.todos.length}</span>
         </h4>
-        
+
         <ul className="list-group">
           { this.state.todos.map((todo, index) =>
               <li className="list-group-item" key={index}>
@@ -75,6 +75,7 @@ class App extends Component {
   }
 }
 
+// THIS ALLOWS YOU TO TYPE AND THEN HANDLE THE INPUT
 class TodoInput extends Component {
   constructor(props) {
     super(props);
@@ -89,6 +90,7 @@ class TodoInput extends Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+
 
   handleInputChange(event) {
     const target = event.target;

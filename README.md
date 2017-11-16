@@ -1,5 +1,5 @@
 # Sample TODO App made with React
-<p align="center"> <img  src="https://media.giphy.com/media/xT1R9Fv5LhhHIQyJ1u/giphy.gif" ></p>
+![](img/React-Todo.gif)
 <br>
 <br>
 

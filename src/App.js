@@ -36,7 +36,7 @@ class App extends Component {
   handleAddTodo(todo) {
     this.setState({todos: [...this.state.todos, todo]});
   }
-
+// THIS WILL DELETE ONE 'TODO', AND THEN RETURN ALL TODOS NOT === TO THE ONE USER SELECTS
   handleRemoveTodo(index) {
     this.setState({
       todos: this.state.todos.filter(function (e, i) {
